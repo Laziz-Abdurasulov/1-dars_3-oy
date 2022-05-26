@@ -1,0 +1,113 @@
+.graphic {
+    width: 100%;
+max-width: 1440px;
+
+}
+
+.graphic__inner {
+    display: flex;
+}
+   
+    
+
+.graphic__left {
+    width: 100%;
+    max-width: 720px;
+    padding-top: 398px;
+    padding-bottom: 59px;
+    background-image: url("../images/graphic-desktop-bgi.png");
+    background-repeat: no-repeat;
+    background-size: 720px 600px;
+}
+
+.graphic__right {
+    width: 100%;
+    max-width: 720px;
+    padding-top: 398px;
+    padding-bottom: 59px;
+    background-image: url("../../images/graphic-desktop-2bgi.jpg");
+    background-repeat: no-repeat;
+    background-size: 720px 600px;
+}
+    
+.graphic__info {
+    width: 100%;
+    width: 339px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+
+.graphic__title {
+    margin-top: 0;
+    margin-bottom: 27px;
+    font-family: 'Fraunces';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 28px;
+    line-height: 35px;
+    letter-spacing: -0.2px;
+    color: #24554A;
+}
+
+.graphic__text {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 27px;
+    letter-spacing: -0.114286px;
+    color: #3E7467;
+}
+
+
+@include max-width(520px) {
+.graphic__inner {
+    width: 100%;
+max-width: 520px;
+flex-wrap: wrap;
+}
+
+.graphic__left {
+    width: 100%;
+    max-width: 520px;
+    background-image: url("../images/graphic-mobile-bgi.png");
+    background-size: 520px 600px;
+}
+
+.graphic__right {
+    width: 100%;
+    max-width: 520px;
+    background-image: url("../images/graphic-mobile-2bgi.png");
+    background-size: 520px 600px;
+}
+}
+
+@include max-width(376px) {
+    .graphic__inner {
+        width: 100%;
+    max-width: 375px;
+    flex-wrap: wrap;
+    }
+    
+    .graphic__left {
+        width: 100%;
+        max-width: 375px;
+        background-image: url("../images/graphic-mobile-bgi.png");
+        background-size: 375px 600px;
+    }
+    
+    .graphic__right {
+        width: 100%;
+        max-width: 375px;
+        background-image: url("../images/graphic-mobile-2bgi.png");
+        background-size: 375px 600px;
+    } 
+}
+
+
+
+
+
