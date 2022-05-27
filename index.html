@@ -5,10 +5,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>1-dars</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
 <body>
-    <header class="site-header"></header>
+    <header class="site-header">
+        <div class="container-min">
+            <div class="header__inner">
+              <a class="logo" href="./index.html">
+                <img
+                  class="header__icon"
+                  src="./images/logo.svg"
+                  width="170"
+                  height="33"
+                  alt="site logo"
+                />
+              </a>
+              <nav class="menu">
+                <ul class="menu__list">
+                  <li class="menu__item">
+                    <a class="menu__link menu__link--bang" href="./index.html">About</a>
+                  </li>
+                  <li class="menu__item">
+                    <a class="menu__link" href="#">Services</a>
+                  </li>
+                  <li class="menu__item">
+                    <a class="menu__link" href="#">Projects</a>
+                  </li>
+                  <li class="menu__item">
+                    <a class="menu__link menu__link--open" href="#">contact</a>
+                  </li>
+                </ul>
+              </nav>
+              <button class="site-header__burger-btn">
+                &#9776;
+              </button>
+              <!-- <button class="humburger-button">
+                <div class="btn not-active">
+                    <span class="humburger-button__span"></span>
+                    <span class="humburger-button__span"></span>
+                    <span class="humburger-button__span"></span>
+                </div>
+              </button>   -->
+            </div>
+          </div>
+    </header>
     <main>
         <section class="hero"></section>
         <section class="transform">
@@ -142,6 +184,10 @@
             </div>
         </section>
     </main>
+
+    <footer class="site-footer"></footer>
+    <script src="./js/main.js" ></script>
+
     <footer class="site-footer">
         <div class="container">
             <div class="site-footer__inner">
@@ -194,5 +240,6 @@
             </div>
         </div>
     </footer>
+
 </body>
 </html>
