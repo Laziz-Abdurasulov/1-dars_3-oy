@@ -1,0 +1,92 @@
+.site-footer {
+    padding-top: 72px;
+    padding-bottom: 72px;
+    background-color: #90D4C6;
+}
+
+.site-footer__info {
+    width: 100%;
+    max-width: 297px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    
+}
+
+.site-footer__list {
+    width: 100%;
+    max-width: 297px;
+    margin-top: 40px;
+    margin-bottom: 88px;
+    padding-left: 0;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+.site-footer__iconc {
+    width: 100%;
+    max-width: 164px;
+    margin-top: 0;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-left: auto;
+    padding-left: 0;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+.site-footer__link {
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: -0.128571px;
+    color: #458D7E;
+    text-decoration: none;
+    transition: all 0.4s ease;
+
+    &:hover {
+        color: #FFFFFF;
+    }
+
+    &:active {
+        color: #FFFFFF;
+    }
+}
+    
+    
+    
+
+.site-footer__links {
+    color: #2C7566;
+    text-decoration: none;
+    transition: all 0.4s ease;
+
+    &:hover {
+        color: #FFFFFF;
+    }
+
+    &:active {
+        color: #FFFFFF;
+    }
+}
+    
+
+svg {
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+    object-fit: cover;
+}
+
+@include max-width(520px) {
+    padding-top: 66px;
+}
+
+@include max-width(376px) {
+padding-top: 64px;
+}
+
