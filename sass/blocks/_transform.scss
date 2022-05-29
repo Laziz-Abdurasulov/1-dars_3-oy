@@ -1,4 +1,102 @@
-.transform__inner {
-    display: flex;
+.transform__list {
+  @include list-global;
+}
+.transform__item {
+  display: flex;
+}
+.transform__item:nth-child(1){
+    flex-direction: row-reverse;
+}
+.tranform__item__right{
+    width: 50%;
+    padding: 157px 165px 157px 110px;
+}
+.transform__title {
+    margin: 0;
+    font-family: 'Fraunces 9pt Soft';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 49px;
+    letter-spacing: -0.285714px;
+    color: #24303E;
+    margin-bottom: 32px;
+}
+.transform__text {
+    margin: 0;
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: -0.128571px;
+    color: #808397;
+    margin-bottom: 40px;
 }
 
+.transform__link{
+    font-family: 'Fraunces 9pt Soft';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #24303E;
+    text-decoration: none;
+    position: relative;
+    z-index: 1;
+    &::before{
+      position: absolute;
+      right: 0;
+      left: -8px;
+      bottom: -2px;
+      z-index: -1;
+      width: 120%;
+      height: 0;
+      background: #FAD400;
+      border-radius: 28px;
+      content: "";
+    }
+    &:hover::before{
+      height: 50%;
+    }
+}
+.transform__link2{
+    font-family: 'Fraunces 9pt Soft';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #24303E;
+    text-decoration: none;
+    position: relative;
+    z-index: 1;
+    &::before{
+      position: absolute;
+      right: 0;
+      left: -8px;
+      bottom: -2px;
+      z-index: -1;
+      width: 120%;
+      height: 0;
+      background: #FE7766;
+      border-radius: 28px;
+      content: "";
+    }
+    &:hover::before{
+      height: 50%;
+    }
+}
+@include max-width(520px){
+    .transform__item {
+        display: block;
+      }
+    .tranform__item__right{
+        text-align: center;
+        width: 100%;
+        padding: 60px 24px;
+    }
+}
